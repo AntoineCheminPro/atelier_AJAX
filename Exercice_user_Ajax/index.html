@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="Fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Exercice User Ajax</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!--load BOOTSTRAP 4.5.2 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header class="jumbotron jumbotron-fluid bg-primary text-warning m-3">
+    <div class="container">
+      <h1 class="display-4">Liste des clients</h1>
+      <p class="lead">application qui permet de trier une liste de clients récupérée sur un serveur grâce à une requête AJAX</p>
+    </div>
+  </header>
+
+<main class="container">
+
+<!-- Add a dropdown -->
+  <div class="dropleft">
+    <button class="btn btn-secondary dropdown-toggle" onclick="showContent()" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    trier par
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="button">
+      <!-- <button class="dropdown-item" type="button" onclick="showContent()">Index</button>
+      <button class="dropdown-item" type="button" onclick="showContent()">Nom</button>
+      <button class="dropdown-item" type="button" onclick="showContent()">Age</button>
+      <button class="dropdown-item" type="button" onclick="showContent()">Ville</button> -->
+
+    </div>
+  </div>
+
+  <p class="content"></p>
+
+  <!-- create table -->
+  <table class="table">
+    <thead class="thead-dark" id="headList">
+      <tr>
+        <!-- <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col">Age</th>
+        <th scope="col">Ville</th> -->
+      </tr>
+    </thead>
+    <tbody id="list">
+      <!-- <tr>
+        <th scope="row index"></th>
+        <td class="name"></td>
+        <td class="age"></td>
+        <td class="city"></td>
+      </tr> -->
+
+    </tbody>
+</table>
+</main>
+
+  <footer class="jumbotron jumbotron-fluid bg-dark text-warning m-3">
+    <div class="container">
+      <h3 class="display-5">AJAX prise en main</h3>
+      <p class="lead font-italic">Grâce à AJAX c'est propre !</p>
+    </div>
+  </footer>
+
+  <!-- Add your site or application content here -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/main2.js"></script>
+</body>
+
+</html>

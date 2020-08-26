@@ -1,0 +1,31 @@
+
+[
+    {
+    "number" : 1,
+    "name" : "Antoine",
+    "age" : 44,
+    "city": "Rouen"
+
+    },
+    {
+    "number" : 2,
+    "name" : "Jesus",
+    "age" : 2020,
+    "city": "Nazareth"
+
+    },
+    {
+    "number" : 3,
+    "name" : "Bruce",
+    "age" : 35,
+    "city": "Gotham City"
+
+    },
+    {
+    "number" : 4,
+    "name" : "Omer",
+    "age" : 45,
+    "city": "Springfield"
+
+    }
+]
